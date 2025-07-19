@@ -159,6 +159,56 @@
             </objects>
             <point key="canvasLocation" x="1049.6183206106871" y="3.5211267605633805"/>
         </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="d99-jc-K0l">
+            <objects>
+                <viewController storyboardIdentifier="ChartViewController" id="rEM-R9-0QF" customClass="ChartViewController" customModule="Assigment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6H-rJ-ELx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCd-WU-RI4" customClass="LineChartView" customModule="DGCharts">
+                                <rect key="frame" x="0.0" y="189" width="393" height="629"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="FAT-Xh-b8w">
+                                <rect key="frame" x="15" y="59" width="363" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kn-OQ-kPS">
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ufV-hz-guK">
+                                        <rect key="frame" x="343" y="0.0" width="20" height="30"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Q6-cY-Neu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0SG-5j-9cq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0SG-5j-9cq" firstAttribute="bottom" secondItem="YCd-WU-RI4" secondAttribute="bottom" id="43K-PY-UD3"/>
+                            <constraint firstItem="YCd-WU-RI4" firstAttribute="top" secondItem="FAT-Xh-b8w" secondAttribute="bottom" constant="100" id="TXS-Tg-Heb"/>
+                            <constraint firstItem="FAT-Xh-b8w" firstAttribute="leading" secondItem="0SG-5j-9cq" secondAttribute="leading" constant="15" id="VZS-ln-sXI"/>
+                            <constraint firstItem="YCd-WU-RI4" firstAttribute="leading" secondItem="0SG-5j-9cq" secondAttribute="leading" id="gnq-9P-nCm"/>
+                            <constraint firstItem="0SG-5j-9cq" firstAttribute="trailing" secondItem="YCd-WU-RI4" secondAttribute="trailing" id="jAn-cm-iv4"/>
+                            <constraint firstItem="FAT-Xh-b8w" firstAttribute="top" secondItem="0SG-5j-9cq" secondAttribute="top" id="m2a-C6-k05"/>
+                            <constraint firstItem="0SG-5j-9cq" firstAttribute="trailing" secondItem="FAT-Xh-b8w" secondAttribute="trailing" constant="15" id="z4n-Ii-9BX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="YCd-WU-RI4" id="5qt-2w-tkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLg-pT-Phd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871" y="4"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.trianglehead.counterclockwise" catalog="system" width="119" height="128"/>

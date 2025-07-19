@@ -57,9 +57,12 @@
 				Models/ServiceError.swift,
 				Services/CoreDataService.swift,
 				Services/ExchangeRateService.swift,
+				Utility/DateValueFormatter.swift,
 				"Utility/String+Extension.swift",
+				"View Controllers/ChartViewController.swift",
 				"View Controllers/CurrencyCell.swift",
 				"View Controllers/HomeViewController.swift",
+				"View Model/ChartViewModel.swift",
 				"View Model/ConverterViewModel.swift",
 			);
 			target = E1A988172E2B4AA80084D148 /* AssigmentTests */;
@@ -76,9 +79,12 @@
 				Models/ServiceError.swift,
 				Services/CoreDataService.swift,
 				Services/ExchangeRateService.swift,
+				Utility/DateValueFormatter.swift,
 				"Utility/String+Extension.swift",
+				"View Controllers/ChartViewController.swift",
 				"View Controllers/CurrencyCell.swift",
 				"View Controllers/HomeViewController.swift",
+				"View Model/ChartViewModel.swift",
 				"View Model/ConverterViewModel.swift",
 			);
 			target = E1A988212E2B4AA80084D148 /* AssigmentUITests */;

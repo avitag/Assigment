@@ -138,6 +138,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     }
     
     private func showChart() {
-
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let chartVC = storyboard.instantiateViewController(withIdentifier: "ChartViewController") as? ChartViewController {
+            chartVC.baseCurrency = viewModel.baseCurrency.value
+            chartVC.targetCurrency = viewModel.targetCurrency.value
+            navigationController?.pushViewController(chartVC, animated: true)
+        }
     }
 }
