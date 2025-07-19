@@ -43,12 +43,3 @@ struct ExchangeRateResponse: Codable {
         try container.encode(rateDict, forKey: .rates)
     }
 }
-
-extension String{
-    
-    func conversion(format: String) -> Date{
-        let formatter = DateFormatter()
-        formatter.dateFormat = format
-        return formatter.date(from: self) ?? Date()
-    }
-}
