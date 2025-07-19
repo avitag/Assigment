@@ -18,6 +18,10 @@ class CoreDataService {
     // MARK: - Core Data Stack
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "Assigment")
+        let description = NSPersistentStoreDescription()
+        description.type = NSInMemoryStoreType
+        container.persistentStoreDescriptions = [description]
+
         container.loadPersistentStores { (_, error) in
             if let error = error {
                 fatalError("Core Data store failed: \(error.localizedDescription)")

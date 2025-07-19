@@ -12,6 +12,17 @@
 		E1A9883E2E2B4BE10084D148 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E1A9883D2E2B4BE10084D148 /* RxCocoa */; };
 		E1A988402E2B4BE10084D148 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E1A9883F2E2B4BE10084D148 /* RxRelay */; };
 		E1A988422E2B4BE10084D148 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1A988412E2B4BE10084D148 /* RxSwift */; };
+		E1A988952E2B78AB0084D148 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A988942E2B78AB0084D148 /* XCTest.framework */; platformFilter = ios; };
+		E1A988962E2B78B40084D148 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A988942E2B78AB0084D148 /* XCTest.framework */; platformFilter = ios; };
+		E1A988982E2B79D10084D148 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = E1A988972E2B79D10084D148 /* RxBlocking */; };
+		E1A9889A2E2B79D10084D148 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E1A988992E2B79D10084D148 /* RxCocoa */; };
+		E1A9889C2E2B79D10084D148 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1A9889B2E2B79D10084D148 /* RxSwift */; };
+		E1A9889E2E2B79DD0084D148 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = E1A9889D2E2B79DD0084D148 /* RxBlocking */; };
+		E1A988A02E2B79DD0084D148 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E1A9889F2E2B79DD0084D148 /* RxCocoa */; };
+		E1A988A22E2B79DD0084D148 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E1A988A12E2B79DD0084D148 /* RxRelay */; };
+		E1A988A42E2B79DD0084D148 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1A988A32E2B79DD0084D148 /* RxSwift */; };
+		E1A988A62E2B79FE0084D148 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E1A988A52E2B79FE0084D148 /* DGCharts */; };
+		E1A988A82E2B7A010084D148 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E1A988A72E2B7A010084D148 /* DGCharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,7 @@
 		E1A987FF2E2B4AA60084D148 /* Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assigment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A988182E2B4AA80084D148 /* AssigmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssigmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A988222E2B4AA80084D148 /* AssigmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssigmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A988942E2B78AB0084D148 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,6 +60,7 @@
 		E1A988482E2B4CC30084D148 /* Exceptions for "Assigment" folder in "AssigmentTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Assigment.xcdatamodeld,
 				Models/CurrencyRate.swift,
 				Models/ExchangeRateResponse.swift,
 				Models/HistoricalDataPoint.swift,
@@ -70,6 +83,7 @@
 		E1A988492E2B4CC30084D148 /* Exceptions for "Assigment" folder in "AssigmentUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Assigment.xcdatamodeld,
 				Models/CurrencyRate.swift,
 				Models/ExchangeRateResponse.swift,
 				Models/HistoricalDataPoint.swift,
@@ -131,6 +145,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A9889A2E2B79D10084D148 /* RxCocoa in Frameworks */,
+				E1A988952E2B78AB0084D148 /* XCTest.framework in Frameworks */,
+				E1A988A82E2B7A010084D148 /* DGCharts in Frameworks */,
+				E1A9889C2E2B79D10084D148 /* RxSwift in Frameworks */,
+				E1A988982E2B79D10084D148 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A988A02E2B79DD0084D148 /* RxCocoa in Frameworks */,
+				E1A988962E2B78B40084D148 /* XCTest.framework in Frameworks */,
+				E1A988A42E2B79DD0084D148 /* RxSwift in Frameworks */,
+				E1A988A22E2B79DD0084D148 /* RxRelay in Frameworks */,
+				E1A988A62E2B79FE0084D148 /* DGCharts in Frameworks */,
+				E1A9889E2E2B79DD0084D148 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +175,7 @@
 				E1A988012E2B4AA60084D148 /* Assigment */,
 				E1A9881B2E2B4AA80084D148 /* AssigmentTests */,
 				E1A988252E2B4AA80084D148 /* AssigmentUITests */,
+				E1A988932E2B78AB0084D148 /* Frameworks */,
 				E1A988002E2B4AA60084D148 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,6 +188,14 @@
 				E1A988222E2B4AA80084D148 /* AssigmentUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E1A988932E2B78AB0084D148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A988942E2B78AB0084D148 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +246,10 @@
 			);
 			name = AssigmentTests;
 			packageProductDependencies = (
+				E1A988972E2B79D10084D148 /* RxBlocking */,
+				E1A988992E2B79D10084D148 /* RxCocoa */,
+				E1A9889B2E2B79D10084D148 /* RxSwift */,
+				E1A988A72E2B7A010084D148 /* DGCharts */,
 			);
 			productName = AssigmentTests;
 			productReference = E1A988182E2B4AA80084D148 /* AssigmentTests.xctest */;
@@ -235,6 +273,11 @@
 			);
 			name = AssigmentUITests;
 			packageProductDependencies = (
+				E1A9889D2E2B79DD0084D148 /* RxBlocking */,
+				E1A9889F2E2B79DD0084D148 /* RxCocoa */,
+				E1A988A12E2B79DD0084D148 /* RxRelay */,
+				E1A988A32E2B79DD0084D148 /* RxSwift */,
+				E1A988A52E2B79FE0084D148 /* DGCharts */,
 			);
 			productName = AssigmentUITests;
 			productReference = E1A988222E2B4AA80084D148 /* AssigmentUITests.xctest */;
@@ -682,6 +725,51 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		E1A988972E2B79D10084D148 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		E1A988992E2B79D10084D148 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E1A9889B2E2B79D10084D148 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E1A9889D2E2B79DD0084D148 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		E1A9889F2E2B79DD0084D148 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E1A988A12E2B79DD0084D148 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		E1A988A32E2B79DD0084D148 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A9883A2E2B4BE10084D148 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E1A988A52E2B79FE0084D148 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A988372E2B4BC10084D148 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		E1A988A72E2B7A010084D148 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A988372E2B4BC10084D148 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -14,6 +14,12 @@ class ExchangeRateService {
     private let baseURL = "https://api.exchangeratesapi.io/v1"
     private let apiKey = "2d99045bfc7f32bfffd9f02e316c5f6d"
 
+    private let coreDataService: CoreDataService
+
+    init(coreDataService: CoreDataService = CoreDataService.shared) {
+        self.coreDataService = coreDataService
+    }
+
     // MARK: - Get historical data for chart
     func getHistoricalData(base: String, target: String) -> Observable<[HistoricalDataPoint]> {
         return Observable.create { observer in
@@ -113,14 +119,14 @@ class ExchangeRateService {
                     do {
                         var response = try JSONDecoder().decode(ExchangeRateResponse.self, from: data)
                         response.date = Date()
-                        CoreDataService.shared.saveExchangeRates(base: base, rates: response.rates, date: response.date)
+                        self.coreDataService.saveExchangeRates(base: base, rates: response.rates, date: response.date)
                         observer.onNext(response)
                         observer.onCompleted()
                     } catch {
                         observer.onError(error)
                     }
                 } else if let error = error {
-                    if let response = CoreDataService.shared.fetchExchangeRates(base: base){
+                    if let response = self.coreDataService.fetchExchangeRates(base: base){
                         observer.onNext(response)
                         observer.onCompleted()
                     }
