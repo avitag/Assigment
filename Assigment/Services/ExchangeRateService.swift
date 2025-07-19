@@ -97,7 +97,9 @@ class ExchangeRateService {
             var components = URLComponents(string: "\(self.baseURL)/latest")!
             components.queryItems = [
                 URLQueryItem(name: "access_key", value: self.apiKey),
-                URLQueryItem(name: "base", value: base),
+                //MARK: Removing the base
+                // As free account don't support the base query
+                // URLQueryItem(name: "base", value: base),
                 URLQueryItem(name: "format", value: "1")
             ]
 
