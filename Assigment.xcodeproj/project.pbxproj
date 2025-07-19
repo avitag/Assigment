@@ -45,6 +45,24 @@
 			);
 			target = E1A987FE2E2B4AA60084D148 /* Assigment */;
 		};
+		E1A988482E2B4CC30084D148 /* Exceptions for "Assigment" folder in "AssigmentTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/CurrencyRate.swift,
+				Models/ExchangeRateResponse.swift,
+				Services/CoreDataService.swift,
+			);
+			target = E1A988172E2B4AA80084D148 /* AssigmentTests */;
+		};
+		E1A988492E2B4CC30084D148 /* Exceptions for "Assigment" folder in "AssigmentUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/CurrencyRate.swift,
+				Models/ExchangeRateResponse.swift,
+				Services/CoreDataService.swift,
+			);
+			target = E1A988212E2B4AA80084D148 /* AssigmentUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +70,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				E1A9882A2E2B4AA80084D148 /* Exceptions for "Assigment" folder in "Assigment" target */,
+				E1A988482E2B4CC30084D148 /* Exceptions for "Assigment" folder in "AssigmentTests" target */,
+				E1A988492E2B4CC30084D148 /* Exceptions for "Assigment" folder in "AssigmentUITests" target */,
 			);
 			path = Assigment;
 			sourceTree = "<group>";
