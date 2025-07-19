@@ -50,6 +50,9 @@
 			membershipExceptions = (
 				Models/CurrencyRate.swift,
 				Models/ExchangeRateResponse.swift,
+				Models/HistoricalDataPoint.swift,
+				Models/HistoricalResponse.swift,
+				Models/History.json,
 				Models/NetworkError.swift,
 				Models/ServiceError.swift,
 				Services/CoreDataService.swift,
@@ -66,6 +69,9 @@
 			membershipExceptions = (
 				Models/CurrencyRate.swift,
 				Models/ExchangeRateResponse.swift,
+				Models/HistoricalDataPoint.swift,
+				Models/HistoricalResponse.swift,
+				Models/History.json,
 				Models/NetworkError.swift,
 				Models/ServiceError.swift,
 				Services/CoreDataService.swift,
