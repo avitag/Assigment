@@ -24,8 +24,8 @@ class ConverterViewModel {
     let lastUpdateTime = BehaviorRelay<Date?>(value: nil)
 
     // MARK: - Variables Services
-    private let exchangeRateService = ExchangeRateService.shared
-    private let coreDataService = CoreDataService.shared
+    private var exchangeRateService = ExchangeRateService.shared
+    private var coreDataService = CoreDataService.shared
     private let disposeBag = DisposeBag()
 
     init() {
@@ -38,6 +38,18 @@ class ConverterViewModel {
         setupAutoRefresh()
         
     }
+    
+    init(
+        exchangeRateService: ExchangeRateService = ExchangeRateService.shared,
+        coreDataService: CoreDataService = CoreDataService.shared
+    ) {
+        self.exchangeRateService = exchangeRateService
+        self.coreDataService = coreDataService
+        setupBindings()
+        fetchExchangeRates()
+        setupAutoRefresh()
+    }
+
 
     // MARK: - Setup Bindings
     private func setupBindings() {
@@ -103,6 +115,21 @@ class ConverterViewModel {
         if let rate = exchangeRates.value?.first(where: {$0.currency == target})?.value {
             let converted = rate * amount
             convertedAmount.accept(converted)
+        }
+    }
+}
+
+class MockExchangeRateService: ExchangeRateService {
+    var shouldFail = false
+    var mockRates: [CurrencyRate] = []
+    var mockDate: Date = Date()
+
+    override func fetchExchangeRates(base: String) -> Observable<ExchangeRateResponse> {
+        if shouldFail {
+            return Observable.error(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Mock error"]))
+        } else {
+            let response = ExchangeRateResponse(base: base, date: mockDate, rates: mockRates)
+            return Observable.just(response)
         }
     }
 }

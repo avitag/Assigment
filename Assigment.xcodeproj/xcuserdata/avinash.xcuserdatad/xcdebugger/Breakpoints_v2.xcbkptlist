@@ -18,22 +18,36 @@
             endingLineNumber = "67"
             landmarkName = "getHistoricalData(base:target:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "84670CAA-D5CA-4BFB-A56D-BE63CB5D04C0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Assigment/View Model/ConverterViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "fetchExchangeRates()"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E3246DC1-1CA7-496B-AE12-CF6A3B7807C9 - 9710325d5b832169"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;Assigment.HistoricalDataPoint&gt;&gt;) -&gt; RxSwift.Disposable in Assigment.ExchangeRateService.getHistoricalData(base: Swift.String, target: Swift.String) -&gt; RxSwift.Observable&lt;Swift.Array&lt;Assigment.HistoricalDataPoint&gt;&gt;"
+                  moduleName = "Assigment.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Documents/Assesments/Troopers/Final/Assigment/Assigment/Services/ExchangeRateService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67">
+               </Location>
+               <Location
+                  uuid = "E3246DC1-1CA7-496B-AE12-CF6A3B7807C9 - 8a32ccc75b57f419"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;AssigmentTests.HistoricalDataPoint&gt;&gt;) -&gt; RxSwift.Disposable in AssigmentTests.ExchangeRateService.getHistoricalData(base: Swift.String, target: Swift.String) -&gt; RxSwift.Observable&lt;Swift.Array&lt;AssigmentTests.HistoricalDataPoint&gt;&gt;"
+                  moduleName = "AssigmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Documents/Assesments/Troopers/Final/Assigment/Assigment/Services/ExchangeRateService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,22 +64,36 @@
             endingLineNumber = "120"
             landmarkName = "fetchExchangeRates(base:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "466E8778-08C1-4B70-BE19-B7A08B1E0FC0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Assigment/View Model/ConverterViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "fetchExchangeRates()"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AA48967E-883E-41CF-8E1A-2D09A09D6EBD - ef006ed64be111c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Assigment.ExchangeRateResponse&gt;) -&gt; RxSwift.Disposable in Assigment.ExchangeRateService.fetchExchangeRates(base: Swift.String) -&gt; RxSwift.Observable&lt;Assigment.ExchangeRateResponse&gt;"
+                  moduleName = "Assigment.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Documents/Assesments/Troopers/Final/Assigment/Assigment/Services/ExchangeRateService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120">
+               </Location>
+               <Location
+                  uuid = "AA48967E-883E-41CF-8E1A-2D09A09D6EBD - e382725c5354f1a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;AssigmentTests.ExchangeRateResponse&gt;) -&gt; RxSwift.Disposable in AssigmentTests.ExchangeRateService.fetchExchangeRates(base: Swift.String) -&gt; RxSwift.Observable&lt;AssigmentTests.ExchangeRateResponse&gt;"
+                  moduleName = "AssigmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Documents/Assesments/Troopers/Final/Assigment/Assigment/Services/ExchangeRateService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
