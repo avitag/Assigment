@@ -9,7 +9,7 @@ import Foundation
 
 struct ExchangeRateResponse: Codable {
     let base: String
-    let date: Date
+    var date: Date
     let rates: [CurrencyRate]
 
     // Custom decoding to convert dictionary into array

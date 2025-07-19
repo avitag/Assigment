@@ -111,7 +111,8 @@ class ExchangeRateService {
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
                 if let data = data {
                     do {
-                        let response = try JSONDecoder().decode(ExchangeRateResponse.self, from: data)
+                        var response = try JSONDecoder().decode(ExchangeRateResponse.self, from: data)
+                        response.date = Date()
                         CoreDataService.shared.saveExchangeRates(base: base, rates: response.rates, date: response.date)
                         observer.onNext(response)
                         observer.onCompleted()

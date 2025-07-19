@@ -30,6 +30,13 @@ class ConverterViewModel {
 
     init() {
         setupBindings()
+        
+        //Fetch Rates on first load
+        fetchExchangeRates()
+        
+        //Setup Auto referesh of the API Call
+        setupAutoRefresh()
+        
     }
 
     // MARK: - Setup Bindings
@@ -78,6 +85,15 @@ class ConverterViewModel {
             }, onError: { [weak self] error in
                 self?.isLoading.accept(false)
                 self?.error.accept(error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
+    }
+
+    // MARK: - Auto Refresh Every 5 Minutes
+    private func setupAutoRefresh() {
+        Observable<Int>.interval(.seconds(60*5), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                self?.fetchExchangeRates()
             })
             .disposed(by: disposeBag)
     }

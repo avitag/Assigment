@@ -32,6 +32,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         setupUI()
         setupBindings()
+        amountTextField.becomeFirstResponder()
     }
     
     private func setupUI() {
