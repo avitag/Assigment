@@ -50,7 +50,10 @@
 			membershipExceptions = (
 				Models/CurrencyRate.swift,
 				Models/ExchangeRateResponse.swift,
+				Models/NetworkError.swift,
+				Models/ServiceError.swift,
 				Services/CoreDataService.swift,
+				Services/ExchangeRateService.swift,
 				"Utility/String+Extension.swift",
 			);
 			target = E1A988172E2B4AA80084D148 /* AssigmentTests */;
@@ -60,7 +63,10 @@
 			membershipExceptions = (
 				Models/CurrencyRate.swift,
 				Models/ExchangeRateResponse.swift,
+				Models/NetworkError.swift,
+				Models/ServiceError.swift,
 				Services/CoreDataService.swift,
+				Services/ExchangeRateService.swift,
 				"Utility/String+Extension.swift",
 			);
 			target = E1A988212E2B4AA80084D148 /* AssigmentUITests */;
